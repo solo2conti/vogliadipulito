@@ -1,0 +1,280 @@
+/* Stili generali */
+body {
+          margin: 0;
+          padding: 0;
+          max-width: 100vw;
+          /* Impedisce al contenuto di eccedere la larghezza dello schermo */
+          overflow-x: hidden;
+          /* Disabilita lo scorrimento orizzontale */
+}
+
+header {
+          background-color: #333;
+          color: #fff;
+          padding: 10px;
+          padding-bottom: 20px;
+          /* Aggiunge spazio sotto il logo */
+          text-align: left;
+}
+
+.logo img {
+          width: 150px;
+}
+
+main {
+          padding: 20px;
+}
+
+.images-section {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 50px;
+          /* Aggiunge margine per evitare sovrapposizione con il logo */
+          height: auto;
+}
+
+.image-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 20px;
+}
+
+.image-container img {
+          width: 30%;
+          border-radius: 8px;
+}
+
+.image-container p {
+          margin-top: 10px;
+          font-size: 16px;
+          text-align: center;
+          color: #333;
+}
+
+footer {
+          background-color: #333;
+          color: #fff;
+          padding: 10px;
+          text-align: center;
+          position: relative;
+          /* Impostato come relative per evitare sovrapposizioni */
+          width: 100%;
+          bottom: 0;
+}
+
+/* Stili per la pagina Referral */
+.referral-list {
+          display: flex;
+          flex-direction: column;
+          /* Dispone gli elementi in colonna */
+          align-items: center;
+          /* Centra gli elementi orizzontalmente */
+          margin-top: 20px;
+}
+
+.referral-item {
+          display: flex;
+          align-items: center;
+          /* Allinea l'immagine e il testo verticalmente al centro */
+          justify-content: center;
+          /* Centra la riga orizzontalmente */
+          width: 80%;
+          /* Imposta una larghezza per ogni riga, puoi modificarla a piacere */
+          max-width: 800px;
+          /* Limita la larghezza massima delle righe */
+          margin-bottom: 20px;
+          /* Spazio tra le righe */
+}
+
+.referral-item img {
+          width: 100px;
+          /* Dimensione dell'immagine tipo fototessera */
+          height: 100px;
+          /* Altezza dell'immagine */
+          object-fit: cover;
+          /* Mantiene le proporzioni dell'immagine e la ritaglia se necessario */
+          border-radius: 50%;
+          /* Rende l'immagine rotonda, se lo desideri */
+          margin-right: 20px;
+          /* Spazio tra l'immagine e il testo */
+}
+
+.referral-item p {
+          font-size: 16px;
+          color: #333;
+          text-align: left;
+          margin: 0;
+}
+
+/* Media query per schermi piccoli */
+@media (max-width: 768px) {
+          .referral-item {
+                    flex-direction: column;
+                    /* Dispone l'immagine sopra il testo su schermi piccoli */
+                    align-items: center;
+                    text-align: center;
+          }
+
+          .referral-item img {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+          }
+}
+
+/* Stili generali del footer */
+footer {
+          background-color: #333;
+          /* Colore di sfondo grigio scuro */
+          color: #fff;
+          /* Colore del testo bianco */
+          padding: 20px;
+          /* Spazio interno */
+          display: flex;
+          /* Flexbox per il layout orizzontale */
+          justify-content: space-between;
+          /* Spaziatura tra navigazione e informazioni */
+          align-items: center;
+          /* Allinea verticalmente al centro */
+          flex-wrap: wrap;
+          /* Permette di avvolgere gli elementi su più righe se necessario */
+          max-width: 100%;
+          /* Assicurati che il footer non ecceda il 100% della larghezza della pagina */
+          overflow: hidden;
+          /* Nasconde eventuali debordamenti */
+}
+
+/* Stili per il contenitore del logo */
+.logo-container {
+          width: 175px;
+          /* Aumenta la dimensione del cerchio */
+          height: 175px;
+          /* Aumenta l'altezza per mantenere il cerchio proporzionato */
+          border-radius: 50%;
+          /* Mantiene il contenitore circolare */
+          overflow: hidden;
+          /* Nasconde l'immagine che esce fuori dal cerchio */
+          display: flex;
+          justify-content: center;
+          /* Centra l'immagine orizzontalmente */
+          align-items: center;
+          /* Centra l'immagine verticalmente */
+          background-color: #f0f0f0;
+          /* (Opzionale) Sfondo del cerchio */
+}
+
+/* Stili per l'immagine del logo */
+.logo-container img {
+          width: 150px;
+          /* Mantieni la dimensione dell'immagine originale */
+          height: 150px;
+          /* Mantieni l'altezza dell'immagine originale */
+          object-fit: contain;
+          /* Assicura che l'immagine si adatti senza essere tagliata */
+          object-position: center;
+          /* Centra l'immagine nel cerchio */
+}
+
+
+/* Stile per la lista di navigazione */
+footer nav ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-wrap: wrap;
+          /* Permetti che i link di navigazione si avvolgano su più righe se necessario */
+}
+
+footer nav ul li {
+          margin-right: 20px;
+}
+
+footer nav ul li a {
+          color: #fff;
+          text-decoration: none;
+}
+
+footer nav ul li a:hover {
+          text-decoration: underline;
+}
+
+
+/* Stile per le informazioni del footer */
+.footer-info {
+          text-align: right;
+          /* Mantieni il testo allineato a destra */
+          font-size: 14px;
+          max-width: 100%;
+          /* Assicurati che le informazioni non eccedano la larghezza */
+          padding-right: 40px;
+          /* Aumenta lo spazio a destra per spostare ulteriormente a sinistra */
+}
+
+.footer-info p {
+          margin: 0;
+          /* Elimina margini verticali tra le righe */
+}
+
+/* Responsività per schermi piccoli */
+@media (max-width: 768px) {
+          .footer-info {
+                    text-align: left;
+                    /* Allinea a sinistra su dispositivi mobili */
+                    margin-top: 20px;
+                    /* Aggiunge uno spazio sopra le informazioni */
+                    padding-right: 20px;
+                    /* Riduci leggermente il padding a destra su schermi piccoli */
+          }
+}
+
+
+/* Stili per il container del contatto */
+.contact-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          /* Allinea verticalmente al centro */
+          align-items: center;
+          /* Centra orizzontalmente */
+          min-height: 80vh;
+          /* Imposta un'altezza minima per centrare verticalmente */
+          text-align: center;
+          /* Centra il testo */
+}
+
+.contact-container p {
+          font-size: 18px;
+          /* Dimensione del testo */
+          margin: 10px 0;
+          /* Spaziatura tra i paragrafi */
+}
+
+/* Stili per il footer e la navigazione */
+footer {
+          background-color: #333;
+          color: #fff;
+          padding: 10px;
+          text-align: center;
+}
+
+footer nav ul {
+          list-style: none;
+          padding: 0;
+}
+
+footer nav ul li {
+          display: inline;
+          margin-right: 15px;
+}
+
+footer nav ul li a {
+          color: #fff;
+          text-decoration: none;
+}
+
+footer nav ul li a:hover {
+          text-decoration: underline;
+}
